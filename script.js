@@ -7,11 +7,14 @@ squares.forEach((sqaure) => {
 function handleMouseOver(event){
 	squares.forEach((square) => {
 		if(square !== event.target){
-			square.style.backgroundColor = "#6F4E37";
+			square.style.backgroundColor = "#6F4E37"; // coffee color
 		}
 	})
 }
 
-function handleMouseOur(event){
-	
+function handleMouseOut(event){
+	squares.forEach((square) => {
+		square.style.backgroundColor = "#E6E6FA"; // lavendar color
+	})
 }
+
